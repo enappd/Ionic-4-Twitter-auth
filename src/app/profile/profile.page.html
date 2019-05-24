@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content class="twitter-bg">
-  <div *ngIf="user.name">
+  <div *ngIf="user && user.name">
     <ion-img class="banner" [src]="user.banner"></ion-img>
     <ion-row>
       <ion-col class="title">
