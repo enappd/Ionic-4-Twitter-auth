@@ -1,0 +1,7 @@
+{
+  "name": "ionic-4-twitter-auth",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

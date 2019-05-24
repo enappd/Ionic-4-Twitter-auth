@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      User Twitter Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="twitter-bg">
+  <div *ngIf="user.name">
+    <ion-img class="banner" [src]="user.banner"></ion-img>
+    <ion-row>
+      <ion-col class="title">
+        {{user.name}} <span class="handle">{{user.handle}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-img class="profile-image" [src]="user.profile_image"></ion-img>
+    <ion-row>
+      <ion-col col-3 padding-left class="label">
+        Location
+      </ion-col>
+      <ion-col col-9>
+        {{user.location}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3 padding-left class="label">
+        Followers
+      </ion-col>
+      <ion-col col-9>
+        {{user.followers}}
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="danger">
+    <ion-title>
+      Logout
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
